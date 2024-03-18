@@ -8,18 +8,21 @@ body {
 #title {
     background-color: #3498db;
     color: #fff;
-    font-size: 24px;
+    font-size: 36px;
     text-align: center;
     padding: 20px;
+    /*border-top-left-radius: 8px;
+    border-top-right-radius: 8px;*/
 }
 
 #form {
-    max-width: 400px;
+    width: 80%;
+    max-width: 600px; /* Adjust maximum width as needed */
     margin: 20px auto;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 form {
@@ -30,19 +33,26 @@ form {
 label {
     margin-bottom: 8px;
     font-weight: bold;
+    color: #333;
 }
 
 input {
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 16px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 6px;
+}
+
+input[type="text"] {
+    font-size: 16px;
 }
 
 input[type="submit"] {
     background-color: #3498db;
     color: #fff;
     cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
 }
 
 input[type="submit"]:hover {
@@ -50,7 +60,8 @@ input[type="submit"]:hover {
 }
 
 #output {
-    max-width: 400px;
+    width: 80%;
+    max-width: 600px; /* Adjust maximum width as needed */
     text-align: center;
     font-family: 'Arial', sans-serif;
     font-size: 16px;
@@ -58,11 +69,24 @@ input[type="submit"]:hover {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    font-size: 24px;
-    color: #333;
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #3498db;
+    color: #fff;
+}
